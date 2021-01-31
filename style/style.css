@@ -297,7 +297,7 @@ a {
 /* ABOUT */
 
 .about {
-    background: url(/image/about_background.svg);
+    background: url(../image/about_background.svg);
     background-repeat: no-repeat;
     height: 1300px;
     padding: 130px 390px 0px 390px;
@@ -372,7 +372,7 @@ a {
 
 .mission {
     padding: 180px 390px 180px 390px;
-    background: url(/image/mission_background.svg);
+    background: url(../image/mission_background.svg);
     height: 250px;
     background-repeat: no-repeat;
     color: white;
@@ -399,7 +399,7 @@ a {
 }
 
 .solve__money {
-    background: url(/image/solve_money.svg);
+    background: url(../image/solve_money.svg);
     width: 1120px;
     height: 500px;
     margin-bottom: 120px;
@@ -407,14 +407,14 @@ a {
 }
 
 .solve__time {
-    background: url(/image/solve_time.svg);
+    background: url(../image/solve_time.svg);
     width: 1120px;
     height: 500px;
     margin-bottom: 120px;
 }
 
 .solve__stay {
-    background: url(/image/solve_stay.svg);
+    background: url(../image/solve_stay.svg);
     width: 1120px;
     height: 500px;
     margin-bottom: 120px;
@@ -474,7 +474,7 @@ a {
 /* CUSTOMERS */
 
 .customers {
-    background: url(/image/customers_background.svg);
+    background: url(../image/customers_background.svg);
     background-repeat: no-repeat;
     padding: 130px 390px 130px 390px;
     text-align: center;
@@ -572,7 +572,7 @@ a {
 /* INFORMATION */
 
 .info {
-    background: url(/image/info_background.svg);
+    background: url(../image/info_background.svg);
     background-repeat: no-repeat;
     color: white;
     height: 600px;
@@ -827,7 +827,7 @@ a {
     }
     /*ABOUT*/
     .about {
-        background: url(/image/tablet__about_bg.svg);
+        background: url(../image/tablet__about_bg.svg);
         padding: 60px 25px 0px 25px;
         height: 1230px;
     }
@@ -873,7 +873,7 @@ a {
     /*MISSION*/
     .mission {
         padding: 60px 0px 10px 0px;
-        background: url(/image/tablet__mission_bg.svg);
+        background: url(../image/tablet__mission_bg.svg);
         height: 525px;
         background-repeat: no-repeat;
         color: white;
@@ -920,7 +920,7 @@ a {
     }
     /* CUSTOMERS */
     .customers {
-        background: url(/image/tablet__customers_bg.svg);
+        background: url(../image/tablet__customers_bg.svg);
         background-repeat: no-repeat;
         height: 568px;
         padding: 90px 30px 30px 30px;
@@ -953,7 +953,7 @@ a {
     }
     /* INFO */
     .info {
-        background: url(/image/tablet__info_bg.svg);
+        background: url(../image/tablet__info_bg.svg);
         background-repeat: no-repeat;
         color: white;
         height: 816px;
