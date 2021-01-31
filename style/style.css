@@ -22,6 +22,7 @@ section {
     padding: 10px 390px 10px 390px;
     width: 1140px;
     font-family: 'DM Sans', sans-serif;
+    max-width: 1140px;
 }
 
 li {
@@ -46,6 +47,7 @@ a {
     height: 750px;
     background-repeat: no-repeat;
     color: #2E3742;
+    margin: 0 auto;
 }
 
 .header__navbar ul {
