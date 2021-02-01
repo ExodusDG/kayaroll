@@ -48,4 +48,74 @@ $(document).ready(function() {
         mobileMenu.toggle(300);
         mobileMenu.toggleClass('navbar__active_show');
     });
+
+    //VIDEO PLAY
+    var video = $('.about__video')
+    var button = $('.play__button')
+    $('.play__button').click(function() {
+            video.get(0).play();
+            video.attr('controls', '')
+            button.addClass('play__button_hide');
+        })
+        // BLOG SLIDER
+
+    var blogPosts = $('.blog__posts');
+    var counter = 0;
+
+    function counterTick() {
+        counter++
+        if (counter == 4) {
+            counter = 0;
+        } else if (counter == 1) {
+            blogPosts.css('transform', 'translateX(0%)')
+            $('.blog__dot').removeClass('blog__dot_active')
+            $('.blog__dot_2').addClass('blog__dot_active')
+        } else if (counter == 2) {
+            blogPosts.css('transform', 'translateX(-129%)')
+            $('.blog__dot').removeClass('blog__dot_active')
+            $('.blog__dot_3').addClass('blog__dot_active')
+        } else if (counter == 3) {
+            blogPosts.css('transform', 'translateX(-259%)')
+            $('.blog__dot').removeClass('blog__dot_active')
+            $('.blog__dot_1').addClass('blog__dot_active')
+        } else if (counter == 4) {
+            counter = 1;
+        }
+    };
+
+    function counterTick320() {
+        counter++
+        if (counter == 4) {
+            counter = 0;
+        } else if (counter == 1) {
+            blogPosts.css('transform', 'translateX(0%)')
+            $('.blog__dot').removeClass('blog__dot_active')
+            $('.blog__dot_2').addClass('blog__dot_active')
+        } else if (counter == 2) {
+            blogPosts.css('transform', 'translateX(-112%)')
+            $('.blog__dot').removeClass('blog__dot_active')
+            $('.blog__dot_3').addClass('blog__dot_active')
+        } else if (counter == 3) {
+            blogPosts.css('transform', 'translateX(-225%)')
+            $('.blog__dot').removeClass('blog__dot_active')
+            $('.blog__dot_1').addClass('blog__dot_active')
+        } else if (counter == 4) {
+            counter = 1;
+        }
+    };
+
+    var w = $(window).width();
+    if (w < 600) {
+        $('.revealator-slideright', '.revealator-slideleft', '.revealator-zoomin').removeClass('revealator-slideright', 'revealator-slideleft', 'revealator-zoomin')
+    } else if (w == 415) {
+        setInterval(counterTick, 2000);
+    } else if (w < 321) {
+        setInterval(counterTick320, 2000);
+    } else if (w == 600) {
+        counterTick()
+
+    } else {
+        return false;
+    }
+
 });
