@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/hamburger.css">
+    <link rel="stylesheet" href="revealator/fm.revealator.jquery.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Kayaroll</title>
@@ -24,9 +25,9 @@
                         <li class="navbar__item">
                             <div class="navbar__links">
                                 <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Our Missions</a></li>
-                                    <li><a href="#">Why Kayaroll</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#mission">Our Missions</a></li>
+                                    <li><a href="#customers">Why Kayaroll</a></li>
                                     <li><a href="#">Reviews</a></li>
                                 </ul>
                             </div>
@@ -46,21 +47,21 @@
                 <!-- MOBILE NAVBAR -->
                 <div class="mobile__navbar">
                     <ul class="mobile__navbar__list">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Missions</a></li>
-                        <li><a href="#">Why Kayaroll</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#mission">Our Missions</a></li>
+                        <li><a href="#customers">Why Kayaroll</a></li>
                         <li><a href="#">Reviews</a></li>
-                        <li><button class="register__button">Register Free</button></li>
+                        <li><button class="register__button mobile__reg_button">Register Free</button></li>
                     </ul>
                 </div>
-                <div class="header__body">
+                <div class="header__body revealator-slideright revealator-once">
                     <div class="header__body_text">
                         <h1>Kaya and Payroll have one thing in common – the smoother the better</h1>
                         <p>Payroll solutions for SMEs and startups</p>
                     </div>
-                    <div class="tablet__header_adaptive">
-                        <img src="image/header_image.svg" alt="header">
-                        <div class="header__body_timer">
+                    <div class="tablet__header_adaptive header__mobile">
+                        <img class="tablet__header_image" src="image/header_image.svg" alt="header">
+                        <div class="header__body_timer ">
                             <h1>Hurry up</h1>
                             <p class="body__timer_desc">We only have 100 places left to register</p>
                             <div class="body__timer_count">
@@ -71,40 +72,46 @@
                             <button class="register__button">Register Free</button>
                         </div>
                     </div>
-                    <div class="navigation__dots_header">
-                        <a href="#header">
-                            <div class="dot dots__active"></div>
-                        </a>
-                        <a href="#about">
-                            <div class="dot"></div>
-                        </a>
-                        <a href="#mission">
-                            <div class="dot"></div>
-                        </a>
-                        <a href="#solve">
-                            <div class="dot"></div>
-                        </a>
-                        <a href="#customers">
-                            <div class="dot"></div>
-                        </a>
-                        <a href="#blog">
-                            <div class="dot"></div>
-                        </a>
-                        <a href="#info">
-                            <div class="dot"></div>
-                        </a>
-                    </div>
+                </div>
+                <div class="navigation__dots_header">
+                    <a href="#header">
+                        <div class="dot dots__active"></div>
+                    </a>
+                    <a href="#about">
+                        <div class="dot"></div>
+                    </a>
+                    <a href="#mission">
+                        <div class="dot"></div>
+                    </a>
+                    <a href="#solve">
+                        <div class="dot"></div>
+                    </a>
+                    <a href="#customers">
+                        <div class="dot"></div>
+                    </a>
+                    <a href="#blog">
+                        <div class="dot"></div>
+                    </a>
+                    <a href="#info">
+                        <div class="dot"></div>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- ABOUT US -->
         <section class="about" id="about">
             <div class="about__body">
-                <h1 class="about__body_title">Uncover the hack to your payroll process</h1>
-                <div class="about__body_video">
-                    <img src="image/about_video.jpg" alt="video">
+                <div class="revealator-slideright revealator-once">
+                    <h1 class="about__body_title">Uncover the hack to your payroll process</h1>
+                    <div class="about__body_video">
+                        <img class="play__button" src="image/video_play.svg" alt="">
+                        <video class="about__video" width="795" height="440" style="outline: 0;" preload="auto">
+                        <source src="image/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-                <div class="about__body_cards">
+                <div class="about__body_cards revealator-zoomin revealator-once">
                     <div class="about__body_card about__card_tablet">
                         <h1>About us</h1>
                         <p class="about__body_card_desc"><span>a friend to SMEs and
@@ -112,17 +119,17 @@
                     </div>
                     <div class="about__card_tablet_1">
                         <div class="about__body_card card_tablet">
-                            <img src="image/about_founded.svg" alt="founded">
+                            <img class="card__tablet" src="image/about_founded.svg" alt="founded">
                             <p class="about__card_title">Founded in 2020</p>
                             <p class="about__card_desc">We’re here to offer a Fresh Approach</p>
                         </div>
                         <div class="about__body_card card_tablet">
-                            <img src="image/about_company.svg" alt="company">
-                            <p class="about__card_title">Singaporean Company</p>
+                            <img class="card__tablet" src="image/about_company.svg" alt="company">
+                            <p class="about__card_title mobile__fix">Singaporean Company</p>
                             <p class="about__card_desc">We’re fully Homegrown</p>
                         </div>
                         <div class="about__body_card card_tablet">
-                            <img src="image/about_sme.svg" alt="sme">
+                            <img class="card__tablet" src="image/about_sme.svg" alt="sme">
                             <p class="about__card_title">SME-Friendly</p>
                             <p class="about__card_desc">We’re focussed on empowering SMEs and Startups</p>
                         </div>
@@ -132,26 +139,26 @@
         </section>
         <!-- MISSIONS -->
         <section class="mission" id="mission">
-            <p class="mission__title">Our mission</p>
-            <p class="mission__desc">Desiring a world that runs smoother, Kayaroll is here to empower and enable SMEs and their employees, by crafting ready-to-go, easy-to-setup, and fun-to-use solutions that simply make lives better.</p>
+            <p class="mission__title revealator-slideright revealator-once">Our mission</p>
+            <p class="mission__desc revealator-slideleft revealator-once">Desiring a world that runs smoother, Kayaroll is here to empower and enable SMEs and their employees, by crafting ready-to-go, easy-to-setup, and fun-to-use solutions that simply make lives better.</p>
         </section>
         <!-- SOLVE PROBLEM -->
         <section class="solve" id="solve">
             <p class="solve__title_text">Problems we solve</p>
             <div class="solve__body">
-                <div class="solve__money">
+                <div class="solve__money revealator-slideright revealator-once">
                     <div class="solve__money-text">
                         <p class="solve__title">Save your Money</p>
                         <p class="solve__desc"><span>Time-consuming payroll calculations and processes</span> that take up critical resources.</p>
                     </div>
                 </div>
-                <div class="solve__time">
+                <div class="solve__time revealator-slideleft revealator-once">
                     <div class="solve__time-text">
                         <p class="solve__title">Save your Time</p>
                         <p class="solve__desc time__desc">To any business, <span>time is money. Digitalise to rid yourself of tedious paperwork, and improve efficiency.</span></p>
                     </div>
                 </div>
-                <div class="solve__stay">
+                <div class="solve__stay revealator-slideright revealator-once">
                     <div class="solve__stay-text">
                         <p class="solve__title">Stay Compliant</p>
                         <p class="solve__desc stay__desc">Our systems are well <span>attuned to government reporting requirements.</span></p>
@@ -162,7 +169,7 @@
         <!-- CUSTOMERS -->
         <section class="customers" id="customers">
             <p class="customers__title">Why our customers love Kayaroll</p>
-            <div class="customers__cards">
+            <div class="customers__cards revealator-zoomin revealator-once">
                 <div class="customers__card">
                     <img src="image/customers_interface.svg" alt="interface">
                     <p class="customers__card_desc">Simple and Intuitive User Interface</p>
@@ -182,28 +189,33 @@
             <div class="blog__body">
                 <p class="blog__title">Blog</p>
                 <div class="blog__posts">
-                    <div class="blog__post">
+                    <div class="mainblog blog__post blog_1 revealator-slideright revealator-delay1 revealator-once">
                         <img src="image/blog_1.jpg" alt="blog_1">
                         <p class="blog__post_title">Everyday practice shows that constant quantitative growth</p>
                         <p class="blog__post_date">January, 29, 2021</p>
                     </div>
-                    <div class="blog__post">
+                    <div class="blog__post blog_2 revealator-slideright revealator-delay2 revealator-once">
                         <img src="image/blog_2.jpg" alt="blog_2">
                         <p class="blog__post_title">Everyday practice shows that constant quantitative growth</p>
                         <p class="blog__post_date">January, 29, 2021</p>
                     </div>
-                    <div class="blog__post blog_3">
+                    <div class="blog__post blog_3 revealator-slideright revealator-delay3 revealator-once">
                         <img src="image/blog_3.jpg" alt="blog_3">
                         <p class="blog__post_title">Everyday practice shows that constant quantitative growth</p>
                         <p class="blog__post_date">January, 29, 2021</p>
                     </div>
+                </div>
+                <div class="blog-dots">
+                    <div class="blog__dot blog__dot_1 blog__dot_active"></div>
+                    <div class="blog__dot blog__dot_2"></div>
+                    <div class="blog__dot blog__dot_3"></div>
                 </div>
                 <a href="#"><button class="blog__body_button">Show More</button></a>
             </div>
         </section>
         <!-- INFORMATION -->
         <section class="info" id="info">
-            <div class="info__body">
+            <div class="info__body revealator-slideleft revealator-once">
                 <div class="footer__body_text">
                     <h1>Our Software is FREE for the First 100 sign-ups!</h1>
                     <p>Hurry! Register your company today, to be first in line for when our product hits the ground, and enjoy our solution completely FREE!</p>
@@ -233,10 +245,11 @@
                     <li class="navbar__item">
                         <div class="navbar__links_footer">
                             <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Missions</a></li>
-                                <li><a href="#">Why Kayaroll</a></li>
-                                <li><a href="#">Reviews</a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#mission">Our Missions</a></li>
+                                <li><a href="#solve">Problems we solwe</a></li>
+                                <li><a href="#customers">Why Kayaroll</a></li>
+                                <li><a href="#">Free Register</a></li>
                             </ul>
                         </div>
                     </li>
@@ -250,5 +263,6 @@
 </body>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/main.js"></script>
+<script src="revealator/fm.revealator.jquery.js"></script>
 
 </html>
